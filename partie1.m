@@ -38,3 +38,11 @@ for i=1:1000
        m_list(i) = mu;
        sig_list(i) = sigm;
 end
+
+figure;
+subplot(2,1,1);
+plot(m_list);
+title('Moyenne estimée');
+subplot(2,1,2);
+plot(sig_list);
+title('Variance estimée');
