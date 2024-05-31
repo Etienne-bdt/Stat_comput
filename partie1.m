@@ -3,7 +3,7 @@ sigma2 = 0.5;
 N = 10000;
 m=1;
 m0=1;
-sig0_2 = 0.5;
+sig0_2 = 5000000;
 
 X = normrnd(0,sigma2,1,N);
 
@@ -12,7 +12,7 @@ mbar = s2*((m0/sig0_2)+sum(X)/sigma2);
 
 m_ech = normrnd(mbar,s2,1,N);
 
-%Bizarre
+plot(m_ech)
 
 %% Matrice de covariance inconnue
 
